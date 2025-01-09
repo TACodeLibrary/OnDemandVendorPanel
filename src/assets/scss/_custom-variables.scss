@@ -1,0 +1,250 @@
+$font-family-sans-serif: "Inter", serif;
+$font-size-root: 62.5%;
+$font-size-base: 1.4rem;
+$headings-font-family: "Inter", serif;
+$headings-font-weight: 400;
+$line-height-base: 1.4;
+$headings-line-height: 1.4;
+$paragraph-margin-bottom: 1.6rem;
+$enable-rfs: false;
+$spacer: 1.6rem;
+$grid-gutter-width: 2.4rem;
+
+$gray-100 : #f9fafb;
+$gray-200 : #f3f4f6;
+$gray-300 : #e5e7eb;
+$gray-400 : #d2d6db;
+$gray-500 : #9da4ae;
+$gray-600 : #6c737f;
+$gray-700 : #384250;
+$gray-800 : #1F2A37;
+$gray-900 : #111927;
+
+
+$gray-bg: #fafafa;
+
+
+$white: #ffffff;
+$black: #000000;
+$orange: #EF3E23;
+$gray: $gray-600;
+$cyan: #0dcaf0;
+$red: #F04438;
+$light-red: #FEF3F2;
+$dark-red: #F97066;
+$linen: #FFEBE9;
+$cornell-red: #B32F1A;
+$green: #12B76A;
+$light-green: #ECFDF3;
+$dark-green: #027A48;
+$yellow: #FDAE2C;
+$light-yellow: #FFFEE8;
+$dark-yellow: #FDB022;
+$dark-orange: #F79009;
+$light-orange: #FFFAEB;
+$sky-blue: #E9F6FF;
+$pink-light: #FEE4E2;
+
+$danger-light: $light-red;
+
+$orange-100: #ffe6cc;
+$orange-200: #ffd9b3;
+$orange-300: #ffcc99;
+$orange-400: #ffc080;
+$orange-500: #ffb366;
+$orange-600: #ffa64d;
+$orange-700: #ff9933;
+$orange-800: #ff8d1a;
+$orange-900: #ff8000;
+
+$lighter-orange: #FF6347;
+
+$colors: (
+  "white": $white,
+  "black": $black,
+  "orange": $orange,
+  "gray": $gray,
+  "red": $red,
+  "light-red":$light-red,
+  "dark-red":$dark-red,
+  "linen":$linen,
+  "cornell-red":$cornell-red,
+  "green": $green,
+  "light-green": $light-green,
+  "dark-green": $dark-green,
+  "yellow": $yellow,
+  "light-yellow": $light-yellow,
+  "dark-yellow": $dark-yellow,
+  "dark-orange": $dark-orange,
+  "light-orange": $light-orange,
+  "sky-blue": $sky-blue,
+  "pink-light": $pink-light,
+);
+
+$oranges: (
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900
+);
+
+$body-color: $gray-900;
+$primary: $white;
+$secondary: $gray-500;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "danger-light": $danger-light,
+
+);
+
+:root {
+  @each $key, $color in $oranges {
+    --bs-#{$key}: #{$color};
+  }
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px,
+);
+
+$link-decoration: none;
+
+$border-radius: .6rem;
+$border-radius-sm: .4rem;
+$border-radius-lg: .8rem;
+$border-radius-xl: 1.6rem;
+$border-radius-xxl: 3.2rem;
+$border-radius-pill: 80rem;
+
+$hr-opacity: 1;
+$hr-border-color: var(--bs-gray-200);
+
+
+$card-border-color: var(--bs-gray-300);
+$card-border-radius: 1.6rem;
+
+$input-btn-padding-y: .8rem;
+$input-btn-padding-x: 1.2rem;
+$input-btn-font-family: $font-family-sans-serif;
+$input-line-height: 1.5;
+$input-btn-font-size: 1.4rem;
+$input-color: var(--bs-white);
+$input-font-weight: 400;
+$input-placeholder-color: var(--bs-gray-100);
+$input-bg: var(--bs-transparent);
+$input-border-color: var(--bs-gray-700);
+$input-border-radius: .8rem;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+$input-focus-border-color: var(--bs-gray-500);
+$input-disabled-bg: var(--bs-gray-200);
+
+$form-label-color: var(--bs-gray-600);
+$form-label-font-size: 1.4rem;
+$form-label-font-weight: 500;
+$form-select-focus-border-color: var(--bs-gray-500);
+$form-select-border-radius: .6rem;
+$form-select-focus-box-shadow: none;
+
+$btn-padding-y: 1.05rem;
+$btn-padding-x: 1.4rem;
+$btn-font-family: var(--font-breeSerif);
+$btn-font-size: 1.4rem;
+$btn-line-height: 1.5;
+$btn-box-shadow: none;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 1.2rem;
+$btn-font-size-lg: 1.6rem;
+
+$btn-border-radius: 1.1rem;
+$btn-border-radius-sm: 1.1rem;
+$btn-border-radius-lg: 1.1rem;
+
+$dropdown-min-width: 24rem;
+$dropdown-font-size: 1.4rem;
+$dropdown-link-color: var(--bs-gray-900);
+$dropdown-border-radius: 1.8rem;
+$dropdown-border-width: 0;
+$dropdown-link-hover-color: var(--bs-orange);
+$dropdown-link-hover-bg: transparent;
+$dropdown-item-padding-y: 0.8rem;
+$dropdown-item-padding-x: 1.4rem;
+$dropdown-link-active-bg: transparent;
+$dropdown-link-active-color: var(--bs-orange);
+$dropdown-padding-x: 1.4rem;
+
+$nav-link-padding-y: .8rem;
+$nav-link-padding-x: 1.2rem;
+$nav-link-focus-box-shadow: none;
+
+$nav-tabs-border-color: var(--bs-gray-200);
+$nav-tabs-border-radius: 0;
+
+$badge-font-size: 1.2rem;
+$badge-font-weight: 500;
+$badge-border-radius: 2.4rem;
+
+$accordion-body-padding-y: 1.2rem;
+$accordion-body-padding-x: 0;
+$accordion-button-padding-y: 1.2rem;
+$accordion-button-padding-x: 0;
+$accordion-border-width: 0;
+$accordion-button-active-bg: transparent;
+$accordion-button-focus-box-shadow: transparent;
+
+$datepicker__selected-color: $primary;
+$datepicker__border-radius: 0.4rem;
+$datepicker__day-margin: 0.3rem;
+$datepicker__font-size: 1.3rem;
+$datepicker__font-family: $font-family-sans-serif;
+$datepicker__item-size: 2.7rem;
+$datepicker__margin: 0.6rem;
+$datepicker__navigation-button-size: 32px;
+$datepicker__triangle-size: 8px;
+
+// Floating input
+$form-floating-height:                  5rem;
+$form-floating-line-height:             1.25 !default;
+$form-floating-padding-x:               1.2rem !default;
+$form-floating-padding-y:               1.4rem !default;
+$form-floating-input-padding-t:         1.625rem !default;
+$form-floating-input-padding-b:         1.625rem !default;
+$form-floating-label-height:            2em !default;
+$form-floating-label-opacity:           .65 !default;
+$form-floating-label-transform:         scale(.85) translateY(-2.5rem) translateX(.15rem) !default;
+// $form-floating-transition:              opacity .1s ease-in-out, transform .1s ease-in-out !default;
+
+
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$lighter-orange}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+;
+$form-check-input-checked-bg-color: $white;
+$form-check-input-checked-border-color: $lighter-orange;
+
+
+$utilities : ("min-viewport-height": (property: min-height,
+    class: min-vh,
+    values: (100: 100vh, 50 : 50vh, 60 : 60vh, 70 : 70vh)))

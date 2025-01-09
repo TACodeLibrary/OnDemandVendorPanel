@@ -1,0 +1,36 @@
+@mixin alignment-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin img-box($width, $padding) {
+  position: relative;
+  max-width: $width;
+  width: 100%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: $padding;
+  }
+
+  img,
+  video,
+  audio {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,1 @@
+export const Logo = '/images/on_demand_logo.png';

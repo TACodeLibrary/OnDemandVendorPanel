@@ -1,0 +1,9 @@
+.field-transparent{
+    label{
+        color: var(--bs-gray-500)!important;
+        &::after{
+            color: var(--bs-white);
+            background-color: var(--bs-gray-800)!important;
+        }
+    }
+}

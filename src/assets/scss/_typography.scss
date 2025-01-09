@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html,
+body {
+  min-height: 100vh;
+  font-family: $font-family-sans-serif;
+  background-color: var(--bs-gray-900);
+  color: var(--bs-white);
+}
+
+p {
+  &.sub-title {
+    font-size: 2rem;
+    color: $white;
+    line-height: 1.4;
+    font-weight: 300;
+    margin: 0 0 2rem;
+  }
+}
+
+.fs-15 {
+  font-size: 1.5rem !important;
+}
+
+.fs-16 {
+  font-size: 1.6rem !important;
+}
+
+.fs-18 {
+  font-size: 1.8rem !important;
+}
+
+
+.title-large {
+  font-size: 2.8rem;
+  margin-bottom: 1.4rem;
+  color: var(--bs-white);
+}
+
+.title-h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+.title-h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.title-h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.title-h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.title-h5 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.heading {
+  margin-bottom: 3.2rem;
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--bs-gray-600);
+    margin-bottom: 0;
+  }
+}
+
+.form-title {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.heading-h4 {
+  font-size: 1.8rem;
+  color: var(--bs-gray-900);
+}
+
+.heading-h5 {
+  font-size: 1.6rem;
+  color: var(--bs-gray-900);
+}

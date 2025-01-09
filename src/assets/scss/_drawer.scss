@@ -1,0 +1,84 @@
+.drawer {
+  position: fixed;
+  width: 40rem;
+  height: 100vh;
+  top: 0;
+  background-color: var(--bs-white);
+  z-index: 1000;
+  right: 0;
+  transform: translateX(100%);
+  // box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.08), -3px 0 6px -4px rgba(0, 0, 0, 0.12), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width:767px) {
+    width: 100%;
+  }
+
+  &.visible {
+    transform: translateX(0);
+  }
+
+  &-header {
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .8rem;
+  }
+
+  &-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &-body {
+    flex: 1;
+    padding: 1.2rem 1.6rem;
+    overflow-y: auto;
+  }
+
+  &-footer {
+    padding: 1.2rem 1.6rem;
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+    background-color: rgba($black, .45);
+    transition: opacity .3s ease;
+    opacity: 0;
+    pointer-events: none;
+
+    &.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.reasons-list {
+  margin-bottom: 0;
+  @extend .list-unstyled;
+
+  li {
+    font-weight: 500;
+
+    &:not(:last-child) {
+      padding-bottom: 1.4rem;
+      margin-bottom: 1.4rem;
+      border-bottom: 1px solid var(--bs-gray-200);
+    }
+
+    label {
+      display: flex;
+      gap: .8rem;
+      cursor: pointer;
+    }
+  }
+}

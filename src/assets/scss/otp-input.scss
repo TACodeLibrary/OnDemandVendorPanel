@@ -1,0 +1,123 @@
+$primary-color: #333;
+$secondary-color: #020202;
+$timer-color: #080808;
+$input-border: rgba(210, 214, 219, 1);
+$font-family: "Arial", sans-serif;
+
+.otp-verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(17, 25, 39, 1);
+  padding: 0 20px;
+}
+
+.otp-verification-form {
+  background-color: rgba(17, 25, 39, 1);
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #777;
+  font-weight: 400;
+}
+
+.email {
+  font-weight: bold;
+  color: $input-border;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.otp-input {
+  background-color: rgba(17, 25, 39, 1);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 36px;
+  border-bottom: 1px solid $input-border;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-weight: 500;
+  color: #fff;
+
+  &:focus {
+    border-color: $timer-color;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+.timer {
+  margin-bottom: 20px;
+}
+
+.timer-text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.resend-container {
+  font-size: 14px;
+  color: #555;
+
+  .resend-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    &.disabled {
+      color: #bbb;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .otp-verification-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .form-subtitle {
+    font-size: 12px;
+  }
+}
